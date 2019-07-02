@@ -1,44 +1,33 @@
-#include<iostream>
+#include "GradeBook.hpp"
+#include <iostream>
 #include <string>
 
-using namespace std;
-
-class GradeBook{
-
-public:
-    GradeBook()
-    {
-        this->courseName="Hello,world!";
-    }
-    GradeBook(string cn)
+GradeBook::GradeBook(std::string cn,std::string tn):courseName(cn),teacherName(tn)
+{
+}
+void GradeBook::setCourseName(std::string cn)
+{
+    if(cn.size()>25){
+        this->courseName = cn.substr(0,25);
+    }else
     {
         this->courseName = cn;
     }
-
-    void setCourseName(string coursename)
-    {
-        this->courseName = coursename;
-    }
-    string getCourseName() const
-    {
-        return this->courseName;
-    }
-    void displayMessage() const
-    {
-        cout<<"welcome to the Grade Book for "<<this->courseName<<endl;
-    }
-    
-private:
-    string courseName;
-};
-
-int main()
+}
+std::string GradeBook::getCourseName() const
 {
-
-    string courseName;
-    GradeBook myGradeBook;
-    cout<<"Please enter the course name:";
-    cin>>courseName;
-    myGradeBook.displayMessage();
-    return 0;
+    return this->courseName;
+}
+std::string GradeBook::getTeacherName() const
+{
+    return this->teacherName;
+}
+void GradeBook::setTeacherName(std::string tn)
+{
+    this->teacherName = tn;
+}
+void GradeBook::displayMessage() const
+{
+    std::cout<<"Welcome to the grade book for "<< this->getCourseName()<<\
+    " by "<<this->getTeacherName()<<endl;
 }
