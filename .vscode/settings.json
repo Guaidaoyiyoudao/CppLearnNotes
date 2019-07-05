@@ -42,7 +42,12 @@
         "typeinfo": "cpp",
         "utility": "cpp",
         "string": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "memory": "cpp",
+        "bit": "cpp",
+        "map": "cpp",
+        "functional": "cpp",
+        "variant": "cpp"
     },
     "C_Cpp.autocomplete": "Default",
     "C_Cpp.default.includePath": [
