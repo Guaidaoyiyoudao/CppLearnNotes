@@ -47,7 +47,8 @@
         "bit": "cpp",
         "map": "cpp",
         "functional": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "algorithm": "cpp"
     },
     "C_Cpp.autocomplete": "Default",
     "C_Cpp.default.includePath": [

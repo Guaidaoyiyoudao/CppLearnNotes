@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-
+const int global = 2;
 int main(void)
 {
     int v;

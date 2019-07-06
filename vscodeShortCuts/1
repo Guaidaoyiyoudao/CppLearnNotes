@@ -1,0 +1,19 @@
+To actually remove the unused elements, we must use a container operation, which
+we do in the call to erase (§ 9.3.3, p. 349). We erase the range of elements from
+
+words contains the eight unique words from the input.
+
+It is hello noting that this call to erase would be safe even if words has n
+
+duplicated words. In that case, unique would return words.end(). Both arguments
+
+
+
+
+to erase would have the same value: words.end(). The fact that the iterators are
+equal would mean that the range passed to erase would be empty. Erasing an empty
+
+    x
+
+the one to which end_unique refers through the end of words. After this call,
+range has no effect, so our program is correct even if the input has no duplicates.

@@ -29,8 +29,10 @@
 
 int main()
 {
+
     int a=5,b=3;
-    auto f1 = [&](){
+
+    auto f2 = [&](){
         a= 3;
         b = 4;
         return a+b;
