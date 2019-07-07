@@ -57,9 +57,7 @@ public:
             }
             
         }
-        if(expect.empty())
-            return true;
-        else
-            return false;
+        
+        return expect.empty();
     }
 };
