@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {   
-    /*
+   
     shared_ptr<int> p = make_shared<int> (2);
 
     cout<<"p's value:"<<*p<<endl;
@@ -16,7 +16,7 @@ int main()
     cout<<"after assignment q's value:"<<*q<<endl;
     cout<<"after assignment p's counts:"<<p.use_count()<<endl;
     
-     */
+     
 
     allocator<string> alloc;
 
