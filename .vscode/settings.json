@@ -48,7 +48,8 @@
         "map": "cpp",
         "functional": "cpp",
         "variant": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "set": "cpp"
     },
     "C_Cpp.autocomplete": "Default",
     "C_Cpp.default.includePath": [
