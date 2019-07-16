@@ -9,6 +9,7 @@ struct Node{
     T value = 0;
     shared_ptr<Node<T>> left;
     shared_ptr<Node<T>> right;
+    shared_ptr<Node<T>> parent;
 };
 
 
@@ -24,11 +25,12 @@ public:
         if(!root)
             root = make_shared<Node<T>>(value);
         else{
-            auto p = root;
+            shared_ptr<Node<T>> p = root;
             while(true){
             if(value>p->value){
                 if(!p->right){
                     p->right = make_shared<Node<T>>(value);
+                    p->right->parent = p;
                     break;
                 }else
                     p = p->right;
@@ -37,6 +39,7 @@ public:
             else{
                 if(!p->left){
                     p->left = make_shared<Node<T>>(value);
+                    p->left->parent = p;
                     break;
                 }else
                     p = p->left;
@@ -70,6 +73,10 @@ public:
 
 
 private:
+
+    shared_ptr<Node<T>> grandparent(shared_ptr<Node<T>> p){
+        return p->parent->parent;
+    }
 
     shared_ptr<Node<T>> root;
 };
