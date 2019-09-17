@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+bubleSort	bubleSort.cpp	/^void bubleSort(vector<int>& nums,int beg,int end)$/;"	f	typeref:typename:void
+insertSort	insertSort.cpp	/^void insertSort(vector<int>& nums,int beg,int end){$/;"	f	typeref:typename:void
+main	bubleSort.cpp	/^int main()$/;"	f	typeref:typename:int
+main	insertSort.cpp	/^int main()$/;"	f	typeref:typename:int
+main	quickSort.cpp	/^int main()$/;"	f	typeref:typename:int
+main	selectSort.cpp	/^int main()$/;"	f	typeref:typename:int
+quickSort	quickSort.cpp	/^void quickSort(vector<int>& nums,int beg,int end){$/;"	f	typeref:typename:void
+quickSort_ptr	quickSort.cpp	/^void quickSort_ptr(vector<int>& nums,int beg,int end){$/;"	f	typeref:typename:void
+selectSort	selectSort.cpp	/^std::vector<int>& selectSort(std::vector<int> &arr,int beg,int end){$/;"	f	typeref:typename:std::vector<int> &

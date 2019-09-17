@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+BST	tree/BST.cpp	/^class BST{$/;"	c	file:
+Complex	complex.cpp	/^	Complex():re{0},im{0}{}$/;"	f	class:Complex	file:
+Complex	complex.cpp	/^	Complex(double r):re{r},im{0}{}		$/;"	f	class:Complex	file:
+Complex	complex.cpp	/^	Complex(double r,double i):re{r},im{i}{}$/;"	f	class:Complex	file:
+Complex	complex.cpp	/^class Complex$/;"	c	file:
+Container	container.hpp	/^class Container$/;"	c
+Iterator	iterator.cpp	/^Iterator<T>::Iterator(Iterator<T>&& other)$/;"	f	class:Iterator
+Iterator	iterator.cpp	/^Iterator<T>::Iterator(const Iterator<T>& other)$/;"	f	class:Iterator
+Iterator	iterator.hpp	/^    Iterator(pointer p=nullptr):it(p){}$/;"	f	class:Iterator
+Iterator	iterator.hpp	/^class Iterator$/;"	c
+Node	tree/BST.cpp	/^    Node(T v):value(v){}$/;"	f	struct:Node	file:
+Node	tree/BST.cpp	/^struct Node{$/;"	s	file:
+VECTOR_HPP	Vector.hpp	/^#define VECTOR_HPP$/;"	d
+Vector	Vector.hpp	/^	Vector(Vector& v)$/;"	f	class:Vector
+Vector	Vector.hpp	/^	Vector(Vector&& r)$/;"	f	class:Vector
+Vector	Vector.hpp	/^	Vector(std::initializer_list<value_type> lst)$/;"	f	class:Vector
+Vector	Vector.hpp	/^	explicit Vector(int sz):_size(sz),elem{new value_type[sz]},used{0}{}$/;"	f	class:Vector
+Vector	Vector.hpp	/^class Vector$/;"	c
+_size	Vector.hpp	/^	int _size = 0;$/;"	m	class:Vector	typeref:typename:int
+add	tree/BST.cpp	/^    void add(T value){$/;"	f	class:BST	typeref:typename:void	file:
+balance	tree/BST.cpp	/^    void balance(){$/;"	f	class:BST	typeref:typename:void	file:
+begin	Vector.hpp	/^Iterator<T> begin(Vector<T>& x)$/;"	f	typeref:typename:Iterator<T>
+capacity	Vector.hpp	/^	int capacity() const$/;"	f	class:Vector	typeref:typename:int
+elem	Vector.hpp	/^	value_type* elem = nullptr;$/;"	m	class:Vector	typeref:typename:value_type *
+end	Vector.hpp	/^Iterator<T> end(Vector<T>& x)$/;"	f	typeref:typename:Iterator<T>
+front	Vector.hpp	/^	value_type front()const$/;"	f	class:Vector	typeref:typename:value_type
+grandparent	tree/BST.cpp	/^    shared_ptr<Node<T>> grandparent(shared_ptr<Node<T>> p){$/;"	f	class:BST	typeref:typename:shared_ptr<Node<T>>	file:
+im	complex.cpp	/^	double re,im;$/;"	m	class:Complex	typeref:typename:double	file:
+imag	complex.cpp	/^	double imag()const$/;"	f	class:Complex	typeref:typename:double	file:
+it	iterator.hpp	/^    pointer it;$/;"	m	class:Iterator	typeref:typename:pointer
+left	tree/BST.cpp	/^    shared_ptr<Node<T>> left;$/;"	m	struct:Node	typeref:typename:shared_ptr<Node<T>>	file:
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+main	tree/BST.cpp	/^int main(){$/;"	f	typeref:typename:int
+operator !=	complex.cpp	/^bool operator !=(Complex a,Complex b)$/;"	f	typeref:typename:bool
+operator !=	iterator.cpp	/^bool Iterator<T>::operator !=(const Iterator<T>& other)const$/;"	f	class:Iterator	typeref:typename:bool
+operator *	iterator.cpp	/^typename Iterator<T>::value_type& Iterator<T>::operator*()$/;"	f	class:Iterator	typeref:typename:Iterator<T>::value_type &
+operator +	Vector.hpp	/^Vector<T> operator +(const Vector<T>& a,const Vector<T>& b)$/;"	f	typeref:typename:Vector<T>
+operator ++	iterator.cpp	/^Iterator<T>& Iterator<T>::operator++()$/;"	f	class:Iterator	typeref:typename:Iterator<T> &
+operator ++	iterator.cpp	/^Iterator<T>& Iterator<T>::operator++(int)$/;"	f	class:Iterator	typeref:typename:Iterator<T> &
+operator +=	complex.cpp	/^	Complex& operator +=(const Complex& r)$/;"	f	class:Complex	typeref:typename:Complex &	file:
+operator --	iterator.cpp	/^Iterator<T>& Iterator<T>::operator--()$/;"	f	class:Iterator	typeref:typename:Iterator<T> &
+operator --	iterator.cpp	/^Iterator<T>& Iterator<T>::operator--(int)$/;"	f	class:Iterator	typeref:typename:Iterator<T> &
+operator -=	complex.cpp	/^	Complex& operator -=(const Complex& r)$/;"	f	class:Complex	typeref:typename:Complex &	file:
+operator =	Vector.hpp	/^	Vector& operator =(const Vector& r)$/;"	f	class:Vector	typeref:typename:Vector &
+operator =	iterator.cpp	/^Iterator<T>& Iterator<T>::operator =(const Iterator<T>& other)$/;"	f	class:Iterator	typeref:typename:Iterator<T> &
+operator =	iterator.cpp	/^Iterator<T>& Iterator<T>::operator=(Iterator<T>&& other)$/;"	f	class:Iterator	typeref:typename:Iterator<T> &
+operator ==	complex.cpp	/^bool operator ==(Complex a,Complex b)$/;"	f	typeref:typename:bool
+operator ==	iterator.cpp	/^bool Iterator<T>::operator ==(const Iterator<T>& other)const$/;"	f	class:Iterator	typeref:typename:bool
+operator []	Vector.hpp	/^	const value_type& operator[](const int index)const$/;"	f	class:Vector	typeref:typename:const value_type &
+operator []	Vector.hpp	/^	value_type& operator [](int index)$/;"	f	class:Vector	typeref:typename:value_type &
+parent	tree/BST.cpp	/^    shared_ptr<Node<T>> parent;$/;"	m	struct:Node	typeref:typename:shared_ptr<Node<T>>	file:
+pointer	iterator.hpp	/^    using pointer = T*;$/;"	t	class:Iterator	typeref:typename:T *
+push_back	Vector.hpp	/^	void push_back(const value_type& value)$/;"	f	class:Vector	typeref:typename:void
+push_back	Vector.hpp	/^    void push_back(value_type&& value)$/;"	f	class:Vector	typeref:typename:void
+re	complex.cpp	/^	double re,im;$/;"	m	class:Complex	typeref:typename:double	file:
+real	complex.cpp	/^	double real()const$/;"	f	class:Complex	typeref:typename:double	file:
+reallocate	Vector.hpp	/^	void reallocate()$/;"	f	class:Vector	typeref:typename:void
+right	tree/BST.cpp	/^    shared_ptr<Node<T>> right;$/;"	m	struct:Node	typeref:typename:shared_ptr<Node<T>>	file:
+root	tree/BST.cpp	/^    shared_ptr<Node<T>> root;$/;"	m	class:BST	typeref:typename:shared_ptr<Node<T>>	file:
+search	tree/BST.cpp	/^    bool search(T value){$/;"	f	class:BST	typeref:typename:bool	file:
+size	Vector.hpp	/^	int size() const$/;"	f	class:Vector	typeref:typename:int
+used	Vector.hpp	/^	int used = 0;$/;"	m	class:Vector	typeref:typename:int
+value	tree/BST.cpp	/^    T value = 0;$/;"	m	struct:Node	typeref:typename:T	file:
+value_type	Vector.hpp	/^	using value_type = T;$/;"	t	class:Vector	typeref:typename:T
+value_type	iterator.hpp	/^    using value_type = T;$/;"	t	class:Iterator	typeref:typename:T
+~BST	tree/BST.cpp	/^    ~BST(){$/;"	f	class:BST	file:
+~Vector	Vector.hpp	/^	~Vector()$/;"	f	class:Vector

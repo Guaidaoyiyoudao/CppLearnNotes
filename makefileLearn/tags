@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+BASE_HPP	Base.hpp	/^#define BASE_HPP$/;"	d
+Base	Base.cpp	/^Base::Base()$/;"	f	class:Base
+Base	Base.hpp	/^class Base$/;"	c
+SUB_HPP	Sub.hpp	/^#define SUB_HPP$/;"	d
+Sub	Sub.cpp	/^Sub::Sub()$/;"	f	class:Sub
+Sub	Sub.hpp	/^class Sub: public Base $/;"	c
+base.o	makefile	/^base.o:$/;"	t
+clean	makefile	/^clean:$/;"	t
+count	Base.hpp	/^    int count=0;$/;"	m	class:Base	typeref:typename:int
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+main.o	makefile	/^main.o:$/;"	t
+printInfo	Base.cpp	/^void Base::printInfo() const$/;"	f	class:Base	typeref:typename:void
+printInfo	Sub.cpp	/^void Sub::printInfo() const$/;"	f	class:Sub	typeref:typename:void
+sub.o	makefile	/^sub.o:$/;"	t
+test	makefile	/^test: main.o base.o sub.o$/;"	t
+~Base	Base.cpp	/^Base::~Base()$/;"	f	class:Base
+~Sub	Sub.cpp	/^Sub::~Sub()$/;"	f	class:Sub
