@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 
@@ -11,9 +12,7 @@ void bubleSort(vector<int>& nums,int beg,int end)
         {
             if(nums[j]>nums[j+1])
             {
-                int tmp = nums[j+1];
-                nums[j+1] = nums[j];
-                nums[j] = tmp;
+				swap(nums[j],nums[j+1]);
             }
         }
     }

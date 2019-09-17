@@ -43,7 +43,7 @@ void quickSort(vector<int>& nums,int beg,int end){
 //采用指针交换法
 void quickSort_ptr(vector<int>& nums,int beg,int end){
 
-    if(beg==end)
+    if(beg<=end)
         return;
     int index = beg;
     int pivot = nums[index];
@@ -80,7 +80,7 @@ void quickSort_ptr(vector<int>& nums,int beg,int end){
     nums[index] = nums[left];//nums[right] left==right
     nums[left] = pivot;
 
-    quickSort_ptr(nums,beg,left);
+    quickSort_ptr(nums,beg,left-1);
     quickSort_ptr(nums,left+1,end);
 
 }
